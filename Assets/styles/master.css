@@ -1,0 +1,716 @@
+@charset "UTF-8";
+.border-test1 {
+  border: 2px solid red;
+}
+
+.border-test2 {
+  border: 2px solid gold;
+}
+
+.border-test3 {
+  border: 2px solid green;
+}
+
+.border-test4 {
+  border: 2px solid purple;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header, section, div, figure, figcaption, span, article, aside, nav, ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "playball";
+}
+
+@font-face {
+  font-family: "playball";
+  src: url(../Font/Playball-Regular.ttf);
+}
+main {
+  height: 100vh;
+  background-color: #060606;
+  /* _______________ END OF DIV __________________ */
+  /* _______________ END OF .ABOUT-US _______________ */
+}
+main > div {
+  position: sticky;
+  /* ______________- END OF FIGURE _______________ */
+}
+main > div > figure {
+  border: 1px solid rgba(121, 121, 121, 0.09);
+  width: 430px;
+  margin-left: 30px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+  /* _____________ END OF IMG -_____________ */
+  /* ____________- END OF FIGCAPTION _____________ */
+}
+main > div > figure > img {
+  width: 100%;
+  height: 500px;
+  padding: 30px;
+  /* transform: scale(0.9); */
+  -o-object-position: center;
+     object-position: center;
+  position: relative;
+}
+main > div > figure::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #FF014F;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+main > div > figure > figcaption {
+  width: 86%;
+  height: 90%;
+  position: absolute;
+  /* border: 2px solid red; */
+  padding: 30px;
+  top: 30px;
+  left: 30px;
+  background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  /* _________________ END OF .ICONS ______________ */
+  /* _____________ END OF H1 ______________ */
+}
+main > div > figure > figcaption > .icons {
+  /* ____________________________  END OF A -_______________________ */
+}
+main > div > figure > figcaption > .icons > a {
+  width: 50px;
+  height: 50px;
+  margin-inline: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background-color: #232324;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+}
+main > div > figure > figcaption > .icons > a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.1);
+  background-color: #FF014F;
+  transition: 0.3s;
+  z-index: -1;
+  opacity: 0;
+}
+main > div > figure > figcaption > .icons > a:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+main > div > figure > figcaption > h1 {
+  margin-top: 250px;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+main > div > figure > figcaption > h1 > span {
+  color: #FF014F;
+}
+main > .about-us {
+  padding: 70px;
+  position: static;
+  overflow-y: scroll;
+  /* _____________ END OF .HAPPY-CLIENTS -______________ */
+  /* ___________ #MY-ACTIVTE ______________ */
+  /* ___________ END OF #MY-RESUME ____________ */
+  /* _________________ END OF #MY-SERVICE ___________ */
+  /* _______________ END OF #SPECIALIZATIONS ___________________ */
+  /* _____________ END OF #PORTOFLIO _________________ */
+  /* ____________ END OF #PRICING ______________ */
+}
+main > .about-us > #interduce {
+  /* ______________ END OF P =_____________ */
+  /* ________________ END OF H1 -_____________  */
+  /* _____________ END OF SPAN -__________- */
+}
+main > .about-us > #interduce > p {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+main > .about-us > #interduce > h1 {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 200;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+main > .about-us > #interduce > h1 > strong {
+  color: #FF014F;
+}
+main > .about-us > #interduce > span {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.5333333333);
+  margin-top: 10px;
+}
+main > .about-us > .happy-clients {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  /* _____________- END OF ARTICAL ___________ */
+}
+main > .about-us > .happy-clients > article {
+  margin-inline: 10px;
+  padding: 10px;
+  /* _____________ END OF SPAN ____________ */
+  /* ______________ END OF H4 -___________ */
+  /* ____________ END OF P -___________ */
+}
+main > .about-us > .happy-clients > article > span {
+  width: 230px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 60px;
+  color: #FFFFFF;
+  display: inline-block;
+  border: 2px solid #232324;
+  border-radius: 5px;
+  background-color: #141414;
+  transition: 0.3s;
+}
+main > .about-us > .happy-clients > article > span:hover {
+  border: 2px solid #FF014F;
+}
+main > .about-us > .happy-clients > article > h4 {
+  text-transform: capitalize;
+  color: #FFFFFF;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 30px;
+}
+main > .about-us > .happy-clients > article > p {
+  color: rgba(255, 255, 255, 0.5333333333);
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+main > .about-us > #my-activte {
+  margin-top: 100px;
+  /* __________ END OF DIV ____________ */
+}
+main > .about-us > #my-activte > div {
+  margin-block: 20px;
+  /* __________________ END OF H5 -___________ */
+  /* _________________ END OF SPAN ____________ */
+  /* _________________ END OF NTH-OF-TYPE 1 ______________ */
+  /* ____________________ END OF NTH-OF-TYPE 2 _______________ */
+  /* _________________- END OF NTH-OF-TYPE 3 _____________ */
+  /* ________________ END OF NTH-OF-TYPE 4 _______________ */
+}
+main > .about-us > #my-activte > div > h5 {
+  color: #9F9F9F;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 18px;
+}
+main > .about-us > #my-activte > div > span {
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(159, 159, 159, 0.2039215686);
+  position: relative;
+  margin-top: 10px;
+}
+main > .about-us > #my-activte > div:nth-of-type(1) > span::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 100%;
+  background-color: #FF014F;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main > .about-us > #my-activte > div:nth-of-type(1) > span::before {
+  content: "90%";
+  display: block;
+  color: rgba(159, 159, 159, 0.7176470588);
+  font-size: 14px;
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+main > .about-us > #my-activte > div:nth-of-type(2) > span::after {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 100%;
+  background-color: #FF014F;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main > .about-us > #my-activte > div:nth-of-type(2) > span::before {
+  content: "75%";
+  display: block;
+  color: rgba(159, 159, 159, 0.7176470588);
+  font-size: 14px;
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+main > .about-us > #my-activte > div:nth-of-type(3) > span::after {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 100%;
+  background-color: #FF014F;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main > .about-us > #my-activte > div:nth-of-type(3) > span::before {
+  content: "95%";
+  display: block;
+  color: rgba(159, 159, 159, 0.7176470588);
+  font-size: 14px;
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+main > .about-us > #my-activte > div:nth-of-type(4) > span::after {
+  content: "";
+  display: block;
+  width: 45%;
+  height: 100%;
+  background-color: #FF014F;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main > .about-us > #my-activte > div:nth-of-type(4) > span::before {
+  content: "45%";
+  display: block;
+  color: rgba(159, 159, 159, 0.7176470588);
+  font-size: 14px;
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+main > .about-us > #my-resume {
+  margin-top: 70px;
+  /* _______________ END OF .EDUCATION ______________ */
+  /* _____________ END OF .EXPERIENCE ______________ */
+}
+main > .about-us > #my-resume > .education {
+  /* ______________ END OF P _____________- */
+  /* __________ END OF P -____________ */
+}
+main > .about-us > #my-resume > .education > p {
+  text-transform: capitalize;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 25px;
+}
+main > .about-us > #my-resume > .education > h3 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 500;
+}
+main > .about-us > #my-resume > .education > h3 > strong {
+  color: #FF014F;
+}
+main > .about-us > #my-resume > .experience {
+  margin-top: 70px;
+  position: relative;
+  /* ____________ END OF SECTION ___________ */
+}
+main > .about-us > #my-resume > .experience::after {
+  content: "";
+  display: block;
+  height: 100%;
+  border: 2px solid #141414;
+  position: absolute;
+  top: 0px;
+  left: 15px;
+}
+main > .about-us > #my-resume > .experience > section {
+  width: 750px;
+  padding: 50px 30px;
+  background-color: #1b1b1c;
+  margin-left: 60px;
+  border-radius: 6px;
+  margin-block: 80px;
+  position: relative;
+  /* __________ END OF DIV _____________ */
+  /* ___________- END OF P ____________ */
+}
+main > .about-us > #my-resume > .experience > section::after {
+  content: "";
+  display: block;
+  width: 45px;
+  border: 3px solid #141414;
+  position: absolute;
+  top: 50px;
+  left: -45px;
+}
+main > .about-us > #my-resume > .experience > section::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #1b1b1C;
+  border: 5px solid #141414;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  left: -55px;
+  z-index: 1;
+  transition: 0.7s;
+}
+main > .about-us > #my-resume > .experience > section > div {
+  border-bottom: 1px solid;
+  /* _________ END OF SECTION -___________ */
+  /* _______________ END OF SPAN ______________ */
+}
+main > .about-us > #my-resume > .experience > section > div > section {
+  padding-bottom: 15px;
+  /* ___________ END OF H4 ____________ */
+  /* __________- END OF P -___________ */
+}
+main > .about-us > #my-resume > .experience > section > div > section > h4 {
+  color: #9F9F9F;
+  text-transform: capitalize;
+  transition: 0.7s;
+}
+main > .about-us > #my-resume > .experience > section > div > section > p {
+  color: #7c838E;
+  margin-top: 10px;
+  font-size: 14px;
+}
+main > .about-us > #my-resume > .experience > section > div > span {
+  display: inline-block;
+  width: 70px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #1e2025;
+  font-size: 12px;
+  border-radius: 6px;
+  transition: 0.7s;
+}
+main > .about-us > #my-resume > .experience > section > p {
+  color: #9F9F9F;
+  margin-top: 30px;
+}
+main > .about-us > #my-resume > .experience > section:hover::before {
+  background-color: #FF014F;
+}
+main > .about-us > #my-resume > .experience > section:hover > div > span {
+  background-color: #FF014F;
+}
+main > .about-us > #my-resume > .experience > section:hover > div > section > h4 {
+  color: #FFFFFF;
+}
+main > .about-us > #my-service {
+  /* ______________- END OF .EDUCATION ___________ */
+  /* _____________ END OF .SKILS ______________ */
+}
+main > .about-us > #my-service > .education {
+  /* ______________ END OF P _____________- */
+  /* __________ END OF P -____________ */
+}
+main > .about-us > #my-service > .education > p {
+  text-transform: capitalize;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 25px;
+}
+main > .about-us > #my-service > .education > h3 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 500;
+}
+main > .about-us > #my-service > .education > h3 > strong {
+  color: #FF014F;
+}
+main > .about-us > #my-service > .skils {
+  margin-top: 100px;
+  /* _____________ END OF .UI ------____________ */
+}
+main > .about-us > #my-service > .skils > .UI {
+  width: 270px;
+  height: 300px;
+  background-color: #141414;
+  border: #9F9F9F;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 40px;
+  border-radius: 7px;
+  margin-inline: 10px;
+  /* ____________ END OF H4 -______________ */
+  /* ____________ END OF P _________________ */
+  /* __________________- END OF A _________________ */
+}
+main > .about-us > #my-service > .skils > .UI > h4 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+main > .about-us > #my-service > .skils > .UI > p {
+  color: #9F9F9F;
+  text-align: center;
+  margin-top: 10px;
+}
+main > .about-us > #my-service > .skils > .UI > a {
+  margin-top: 13px;
+  text-decoration: none;
+  padding: 5px 30px;
+  border: 2px solid rgba(159, 159, 159, 0.5411764706);
+  color: #9F9F9F;
+  border-radius: 6px;
+  font-size: 17px;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+main > .about-us > #my-service > .skils > .UI > a > i {
+  font-weight: bolder;
+  margin-left: 10px;
+  font-size: 20px;
+}
+main > .about-us > #my-service > .skils > .UI > a:hover {
+  background-color: #FF014F;
+  border: 2px solid #FF014F;
+}
+main > .about-us > #specializations {
+  margin-top: 20px;
+  /* ـ____________ END OF .EDUCATION -____________ */
+  /* _________________- END OF .FIGMA ______________ */
+}
+main > .about-us > #specializations > .education {
+  margin-top: 100px;
+  /* ______________ END OF P _____________- */
+  /* __________ END OF P -____________ */
+}
+main > .about-us > #specializations > .education > p {
+  text-transform: capitalize;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 25px;
+}
+main > .about-us > #specializations > .education > h3 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 500;
+}
+main > .about-us > #specializations > .education > h3 > strong {
+  color: #FF014F;
+}
+main > .about-us > #specializations > .figma {
+  margin-top: 50px;
+  /* _______________- END OF FIGURE _--____________ */
+}
+main > .about-us > #specializations > .figma > figure {
+  background-color: #141414;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  margin-inline: 10px;
+  margin-block: 10px;
+  /* ________________________ END OF IMG __________________- */
+  /* ______________ END OF H3 ____________ */
+  /* _______________ END OF P -_______________- */
+}
+main > .about-us > #specializations > .figma > figure > img {
+  width: 40px;
+  margin-top: 30px;
+}
+main > .about-us > #specializations > .figma > figure > h3 {
+  color: #FFFFFF;
+  font-size: 50px;
+  margin-top: 20px;
+}
+main > .about-us > #specializations > .figma > figure > p {
+  color: #9F9F9F;
+  margin-top: 20px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+main > .about-us > #portfolio {
+  /* ___________________ END OF .EDUCATION -_________________ */
+  /* -______________ END OF .PROJECTS ______________ */
+}
+main > .about-us > #portfolio > .education {
+  margin-top: 100px;
+  /* ______________ END OF P _____________- */
+  /* __________ END OF P -____________ */
+}
+main > .about-us > #portfolio > .education > p {
+  text-transform: capitalize;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 25px;
+}
+main > .about-us > #portfolio > .education > h3 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 500;
+}
+main > .about-us > #portfolio > .education > h3 > strong {
+  color: #FF014F;
+}
+main > .about-us > #portfolio > .projects {
+  margin-top: 70px;
+  /* _______________ END OF SECTION ______________- */
+}
+main > .about-us > #portfolio > .projects > section {
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 10px; */
+  border-radius: 5px;
+  margin-inline: 20px;
+  margin-block: 20px;
+  /* ______________ END OF FIGURE _______________ */
+  /* ____________________ END OF DIV __________________ */
+  /* __________________ END OF H3 _________________ */
+}
+main > .about-us > #portfolio > .projects > section > figure {
+  /* width: 370px; */
+  /* height: 300px; */
+  border-radius: 7px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+main > .about-us > #portfolio > .projects > section > figure > a {
+  /* width: 100%; */
+  /* height: 100%; */
+}
+main > .about-us > #portfolio > .projects > section > figure > a > img {
+  /* width: 100%; */
+  /* height: 100%; */
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.7s;
+}
+main > .about-us > #portfolio > .projects > section > div {
+  padding: 10px 30px;
+}
+main > .about-us > #portfolio > .projects > section > div > p {
+  text-transform: uppercase;
+  color: #FF014F;
+  font-weight: 100;
+  font-size: 10px;
+}
+main > .about-us > #portfolio > .projects > section > div > span {
+  color: rgba(159, 159, 159, 0.4117647059);
+  font-size: 13px;
+}
+main > .about-us > #portfolio > .projects > section > h3 {
+  display: inline-block;
+  padding: 0px 30px;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+main > .about-us > #portfolio > .projects > section:hover > figure > a > img {
+  transform: scale(1.1);
+}
+main > .about-us > #pricing {
+  margin-top: 100px;
+  /* ___________________ END OF .EDUCATION -_________________ */
+  /* ـ____________ END OF .MU-ORICING ______________ */
+}
+main > .about-us > #pricing > .education {
+  margin-top: 100px;
+  /* ______________ END OF P _____________- */
+  /* __________ END OF P -____________ */
+}
+main > .about-us > #pricing > .education > p {
+  text-transform: capitalize;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 25px;
+}
+main > .about-us > #pricing > .education > h3 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 500;
+}
+main > .about-us > #pricing > .education > h3 > strong {
+  color: #FF014F;
+}
+main > .about-us > #pricing > .my-pricing {
+  margin-top: 50px;
+  /* _____________ END OF SECTION ________________ */
+}
+main > .about-us > #pricing > .my-pricing > section {
+  padding: 40px;
+  background-color: #141414;
+  margin-inline: 20px;
+  /* _______________ END OF DIV ____________ */
+  /* +____________ END OF P -___________ */
+}
+main > .about-us > #pricing > .my-pricing > section > div {
+  border-bottom: 1px solid rgba(124, 131, 142, 0.2509803922);
+  padding-bottom: 20px;
+  /* -____________ END OF SECTINO -_________ */
+  /* -_____________ END OF SECTION -____________ */
+}
+main > .about-us > #pricing > .my-pricing > section > div > section {
+  /* padding: 0px 0px; */
+}
+main > .about-us > #pricing > .my-pricing > section > div > section > p {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 100;
+}
+main > .about-us > #pricing > .my-pricing > section > div > section > span {
+  color: rgba(159, 159, 159, 0.5137254902);
+  font-size: 15px;
+}
+main > .about-us > #pricing > .my-pricing > section > div > h5 {
+  color: #7c838E;
+  font-weight: normal;
+}
+main > .about-us > #pricing > .my-pricing > section > div > h5 > span {
+  font-size: 40px;
+  color: #FF014F;
+  font-weight: 600;
+}
+main > .about-us > #pricing > .my-pricing > section > p {
+  color: #FFFFFF;
+  padding: 50px 70px 0px 0px;
+  line-height: 2.3;
+}/*# sourceMappingURL=master.css.map */
